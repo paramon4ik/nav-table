@@ -1,0 +1,429 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+body {
+    cursor: url(../image/cursor1.cur), auto;
+}
+
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+h1,
+h2,
+h3 {
+    color: #bfbfbf;
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+h1 {
+    margin-bottom: 25px;
+}
+
+h2 {
+    margin: 0 0 25px;
+}
+
+h3 {
+    margin: 50px 0 25px;
+}
+
+.food>ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    /* text-align: justify;
+    font-size: 0; */
+}
+
+/* .food>ul:after{
+    content: "";
+    display: inline-block;
+    width: 100%;
+} */
+
+.food>ul>li {
+    border-left: 1px solid #3f4852;
+    border-right: 1px solid #3f4852;
+}
+
+.food>ul>li:first-child {
+    border-left: none;
+}
+
+.food>ul>li:last-child {
+    border-right: none;
+}
+
+nav {
+    padding-bottom: 50px;
+}
+
+.service {
+    padding: 40px 0;
+    display: block;
+    display: table;
+    width: 100%;
+}
+
+.service>ul {
+    display: table-row;
+}
+
+.service>ul>li {
+    display: table-cell;
+}
+
+.service>ul>li:first-child {
+    border-radius: 3px 0 0 3px;
+}
+
+.service>ul>li:last-child {
+    border-radius: 0 3px 3px 0;
+}
+
+.service .menu a {
+    display: block;
+}
+
+.food>ul,
+.service>ul,
+.village>ul {
+    padding-left: 0;
+    list-style: none;
+    background-color: #2a3644;
+}
+
+.menu li:hover>.submenu,
+.menu li:hover>.submenu2,
+.menu li:hover>.submenu3 {
+    display: block;
+}
+
+.village {
+    font-size: 0;
+}
+
+.village li {
+    display: inline-block;
+}
+
+.service>ul>li,
+.village>ul>li {
+    border-right: 1px solid #3f4852;
+}
+
+
+.menu {
+    border-radius: 3px;
+}
+
+.menu>li {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.menu>li>a {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu>li:hover>a {
+    background-color: #3f4852;
+    color: #fd8612;
+}
+
+.menu a {
+    display: inline-block;
+    padding: 17px 30px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+
+.menu>li:first-child>a:hover {
+    border-radius: 3px 0 0 3px;
+}
+
+.menu>li:last-child>a:hover {
+    border-radius: 0 3px 3px 0;
+}
+
+.submenu li:first-child>a:hover {
+    border-radius: 3px 3px 0 0;
+}
+
+.submenu li:last-child>a:hover {
+    border-radius: 0 0 3px 3px;
+}
+
+.submenu {
+    padding-top: 5px;
+}
+
+.submenu2 {
+    padding-left: 5px;
+    left: 100%;
+    top: 0;
+}
+
+.submenu3 {
+    padding-right: 5px;
+    right: 100%;
+    top: 0;
+}
+
+.submenu,
+.submenu2,
+.submenu3 {
+    position: absolute;
+    display: none;
+    width: 210px;
+    z-index: 1;
+}
+
+.submenu ul {
+    padding-left: 0;
+    border-radius: 3px;
+    list-style: none;
+    background-color: #d2d4d5;
+}
+
+.submenu li {
+    position: relative;
+    display: block;
+    border-bottom: 1px solid #b9bdc1;
+}
+
+.submenu ul:not(.double) li:last-child {
+    border-bottom: none;
+}
+
+.submenu li>a:hover {
+    background-color: #2a3644;
+    color: #e47e1b;
+}
+
+.submenu a {
+    display: block;
+    padding: 15px 20px;
+    font-size: 15px;
+    color: #2a3644;
+    font-weight: bold;
+    text-align: left;
+}
+
+.double {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 420px;
+    height: 191px;
+}
+
+.double li:nth-child(4n) {
+    border-bottom: none;
+}
+
+.double li:not(:nth-child(n+5)) {
+    border-right: 1px solid #b9bdc1;
+}
+
+.double li {
+    width: 210px;
+    box-sizing: border-box;
+}
+
+.milk {
+    right: 0;
+}
+
+.socialnetworks {
+    float: right;
+    margin: 0;
+    padding: 15px 30px 0 0;
+}
+
+.socialnetworks li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.socialnetworks a {
+    display: block;
+    padding: 0;
+    background-image: url(../image/create-nav.png);
+}
+
+a.fb {
+    width: 10px;
+    height: 19px;
+    background-position: -12px 0;
+}
+
+a.fb:hover {
+    background-position: 0 0;
+}
+
+a.tw {
+    padding: 0;
+    width: 18px;
+    height: 15px;
+    background-position: -89px -1px;
+}
+
+a.tw:hover {
+    background-position: -68px -1px;
+}
+
+a.inst {
+    width: 19px;
+    height: 19px;
+    background-position: -47px 0;
+}
+
+a.inst:hover {
+    background-position: -25px 0;
+}
+
+.menu .home {
+    position: relative;
+    padding-left: 60px;
+}
+
+a.home:before {
+    content: "";
+    position: absolute;
+    left: 30px;
+    top: 16px;
+    background-image: url(../image/create-nav.png);
+    background-position: -1px -26px;
+    width: 16px;
+    height: 13px;
+
+}
+
+.table {
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.table,
+.table-style {
+    display: table;
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+.table ul {
+    padding-left: 0;
+}
+
+.table th,
+.table-head li {
+    border-bottom: 1px solid #3f4852;
+    border-right: 1px solid #3f4852;
+}
+
+.table tr:not(:last-child) td,
+.table-style ul:nth-child(n+2):not(:last-child) li {
+    border-bottom: 1px solid #c0c1c2;
+}
+
+.table td:not(:last-child),
+.table-style ul:nth-child(n+2) li:not(:last-child) {
+    border-right: 1px solid #c0c1c2;
+}
+
+.table th {
+    padding: 15px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #2a3644;
+}
+
+.table td,
+.table-style {
+    padding: 10px;
+    background-color: #f2f2f2;
+    font-size: 16px;
+    color: #2a3644;
+}
+
+.table tr:nth-child(2n) td,
+.table-style>ul:nth-child(2n+3) {
+    background-color: #e8e8e8;
+}
+
+.table tr:hover td,
+.table-style ul:nth-child(n+2):hover {
+    background-color: #c0c1c2;
+}
+
+.table td:first-child,
+.table-style li:first-child {
+    text-align: center;
+}
+
+.table td:nth-child(2),
+.table-style li:nth-child(2) {
+    padding-left: 25px;
+}
+
+.table td:nth-child(n+3),
+.table-style li:nth-child(n+3) {
+    padding-right: 20px;
+    text-align: right;
+}
+
+.table-head li:nth-child(n+3) {
+    text-align: center;
+}
+
+.table-name {
+    width: 50%;
+    text-align: left
+}
+
+
+.table-style>ul {
+    display: table-row;
+
+}
+
+.table-style {
+    border-radius: 3px;
+}
+
+.table-style>ul>li {
+    display: table-cell;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.table-head {
+    padding: 15px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #2a3644;
+}
